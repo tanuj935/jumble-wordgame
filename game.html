@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+
+<html >
+
+<head>
+
+<title>
+
+AngularJs ng-click Event Example
+
+</title>
+
+<style>
+body {
+margin: 0;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+background-image:url('jumble1.jpg')!important;
+background-repeat:no-repeat;
+background-size: cover;
+}
+h1{
+text-align:center;
+margin: auto;
+padding: 30px;
+font-size: 56px;
+color:#00000;
+}
+.end{
+text-align: center;
+}
+.box{
+height: 200px;
+border: auto solid black;
+display: inline-block;
+position: relative;
+}
+#player1{
+padding: 30px;
+margin:30px;
+font-size: 200%;
+}
+#player2{
+padding: 30px;
+margin:30px;
+font-size: 200%;
+
+}
+bu{
+padding: 15px 13px;
+border-radius: 25px;
+color:#555;
+border: none;
+}
+
+input[type=text]{
+border: 2px solid pink;
+border-radius: 10%;
+height: 20px;
+}
+
+input[type=text]:focus {
+  border: 2px solid pink;
+border-radius: 10%;
+height: 25px;
+}
+  .bu{
+  width: 120px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.bu{
+  background-color: transparent;
+  border: 3px solid #000080;
+  border-radius: 50px;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  color: #000000;
+}
+.bu:hover,
+.bu:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.25em);
+}
+.bu:hover {
+ background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+   animation:slidebg 5s linear infinite;
+}
+</style>
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
+
+
+</head>
+
+<body background-image: linear-gradient(to bottom, #68EACC, #497BE8);>
+<div ng-app="myApp" ng-controller="myCtrl" class="container">
+<h1>JUMBLE WORLD</h1>
+<div id="player1" class="box">
+<p>word:&nbsp{{name}}
+&nbsp
+player1: <input type="text" ng-model="wor"><br>
+<br>
+<button ng-click=submit() class="bu">submit</button>
+<p>your score:&nbsp;{{counter}}</p>
+<button ng-click=hint() class="bu">hint</button>
+<p>{{take}}</p>
+</div>
+<div id="player2" class="box">
+<p>word:&nbsp;{{names}}&nbsp;&nbsp;
+player2: <input type="text" ng-model="wo"><br><br>
+<button ng-click=next() class="bu">submit</button>
+<p>your score:&nbsp;{{count}}</p>
+<button ng-click=hintu() class="bu">hint</button>
+<p>{{ate}}</p>
+</div>
+<div class="end"><br><br><br><br>
+<button ng-click=exit() class="bu">exit</button>
+</div>
+</div>
+<script>
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope) {
+	$scope.counter=0;
+	$scope.count=0;
+$scope.player="None";
+$scope.names="None";
+  $scope.wordsa=['rac','sawh','afn','owtel','paos','oopns','entt'];
+  $scope.name=$scope.wordsa[0];
+  $scope.words=['car','wash','fan','towel','soap','spoon','tent'];
+  $scope.mywords=['rent','difficult','hedious','lost','care','swim','jump'];
+  $scope.mywordsa=['tner','diiffltcu','sheidsuo','slto','erac','wmis','pmuj'];
+$scope.i=0;
+$scope.j=0;
+$scope.k=0;
+$scope.l=0;
+  $scope.submit=function(){
+	if (angular.equals($scope.words[$scope.k], $scope.wor))
+        $scope.counter++;
+	else
+		alert('wrong answer!!better luck next time!!');
+$scope.name="None";
+$scope.names=$scope.mywordsa[$scope.j];
+	$scope.i++;
+	$scope.k++;
+	if($scope.i==7){
+		$scope.i=0;
+	}
+};
+$scope.next=function(){
+	if (angular.equals($scope.mywords[$scope.l], $scope.wo))
+        $scope.count++;
+	else
+		alert('wrong answer!!better luck next time!!');
+	$scope.names="None";
+	$scope.name=$scope.wordsa[$scope.i];
+	$scope.j++;
+	$scope.l++;
+	if($scope.j==7){
+		$scope.j=0;
+	}
+};
+$scope.exit=function(){
+	if($scope.counter > $scope.count)
+		$scope.player="player 1";
+	if($scope.counter < $scope.count)
+		$scope.player="player 2";
+	if($scope.counter == $scope.count)
+		$scope.player="no-one(tie)";
+};
+$scope.take=" ";
+$scope.ate=" ";
+$scope.hinta=['have four wheels','it is an action','three slides with rotator','cloth we use after shower','bathing device','use while eating','cloth house'];
+$scope.hintb=['paying to a house for living','word used when something is hard to solve','synonym for very bad','we use this word when we search for a thing','synonym for affection','action in water','moving up and down'];
+$scope.hint=function(){
+	if($scope.name != 'None'){
+		$scope.counter--;
+		$scope.take=$scope.hinta[$scope.i];
+	}
+};
+$scope.hintu=function(){
+	if($scope.names != 'None'){
+		$scope.count;
+		$scope.ate=$scope.hintb[$scope.j];
+	}
+};
+});
+</script>
+</body>
+
+</html>

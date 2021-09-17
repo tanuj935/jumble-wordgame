@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificate</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/css/bootstrap.min.css" integrity="sha512-Ez0cGzNzHR1tYAv56860NLspgUGuQw16GiOOp/I2LuTmpSK9xDXlgJz3XN4cnpXWDmkNBKXR/VDMTCnAaEooxA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=PMlcmZP1LegSW0zdbxkKBBWgLu93KQSPFHGMdOSfa7CSBycxSG4J8XAsYNRmyEEnA_vhrJYtIdAXDTcIxfeieDDfERkDK-GIgZmPpIVCAFqAdHsfp6EXEwVwU3U5dDV82xMPsaUEoL3LamOrxfQOF0pXTwG5d_7jV-2xTNaMvP0Hxoqc_mVBSey8hI_NoGumufa9C1kHTW_dIASPzc6kbCNWdpDTxSFEC2qPy8Kd9okw2pdpBSYqj5WIYW1eThGgdAeE8RvUiHe6KOqIFwvn7nQZnB7qAsnzJMCy-OGSMH-e17ZXav-UcK43UxDfiHo5PaHHpPB1rz2LkusPxBhHdAuUlRtyjMtbr2eiuJtTU7ppazOD-tzswzXZ937w5CTt2hOb4Usi5d1RaKDIbNYEL8YCAgg8jTAMPU8o7wiIznmv01blVMx8oiGUHZvgljmVtavNwC6Nij4227RuBQbrFg" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9kb2MtMDgtMzgtZG9jcy5nb29nbGV1c2VyY29udGVudC5jb20vZG9jcy9zZWN1cmVzYy8yMTByN3BrMG1pNTc4YWlubzQ3NWdvNmZxYjBkOWM4NS8wNGI5YWh0YXVwaW04OHZsZGswZXFhZ2Y2YXAxa2c0aC8xNjMxNjg0MTc1MDAwLzE1ODkyNzgxODI1OTEwNDU2MDA0LzA4MzkzODc2NjQ0NDg3MDU3NjU0LzFTM3lXZHJnR3N5c0lJUmVkTHhUYmhFVENpZ0Zpb0lQRz9lPWRvd25sb2FkJmF1dGh1c2VyPTAmbm9uY2U9MXRkaW44a2VzdDFtMCZ1c2VyPTA4MzkzODc2NjQ0NDg3MDU3NjU0Jmhhc2g9NGN0MmwxaGQzYXR0NmRsZmNxcDl1aWdodjJwaHI0ZzM"/><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Barlow Semi Condensed|Barlow|Baloo 2|Bai Jamjuree|B612 Mono|B612|Aclonica|Sofia|Arvo|Arima Madurai" rel="stylesheet">
+    <style id="style"></style>
+    <script src="https://raw.githack.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+
+* {
+    margin:0;
+    padding:0;
+    
+}
+body{
+    background-image:url('jumble.jpg')!important;
+    background-repeat=no-repeat;
+    opacity=0.5;
+    
+}
+a,a:hover{
+  text-decoration: none;
+}
+.myform-area{
+  overflow: hidden;
+  padding: 60px 0;
+  background: #f4fffe;
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.myform-area .form-area{
+  position: relative;
+  background: rgba(103,58,183,0.7);
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  box-shadow: 0 0 40px 0 #e1e1e1;
+}
+
+.myform-area .form-area .form-content,
+.myform-area .form-area .form-input{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    float: left;
+    box-sizing: border-box;
+}
+
+.myform-area .form-area .form-content{
+  width: 50%;
+  padding: 40px 30px;
+}
+
+.myform-area .form-area .form-content h2{
+  color: #fff;
+}
+.myform-area .form-area .form-content p{
+  color: #fff;
+}
+.myform-area .form-area .form-content ul{
+  margin-top: 50px;
+}
+
+.myform-area .form-area .form-content ul li{
+  display: inline-block;
+  margin-right: 10px;
+}
+.myform-area .form-area .form-content a i{
+    margin-right: 10px;
+}
+
+.myform-area .form-area .form-content .facebook{
+  display: block;
+  padding: 10px 20px;
+  background: #3B579D;
+  color: #fff;
+  font-size: 15px;
+  text-transform: capitalize;
+  border-radius: 4px;
+  border: 1px solid #3B579D;
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+}
+
+.myform-area .form-area .form-content .facebook:hover,
+.myform-area .form-area .form-content .facebook:focus{
+    background: transparent;
+}
+
+.myform-area .form-area .form-content .twitter{
+  display: block;
+   padding: 10px 20px;
+   background: #00ACED;
+   color: #fff;
+   font-size: 15px;
+   text-transform: capitalize;
+   border-radius: 4px;
+   border: 1px solid #00ACED;
+   -webkit-transition: all .5s;
+   -o-transition: all .5s;
+   transition: all .5s;
+}
+
+.myform-area .form-area .form-content .twitter:hover,
+.myform-area .form-area .form-content .twitter:focus{
+    background: transparent;
+}
+.myform-area .form-area .form-input{
+  background-color: white;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 40px 0 #e1e1e1;
+}
+.myform-area .form-area .form-input{
+    width: 50%;
+    background: #fff;
+    padding: 40px 30px;
+}
+
+.myform-area .form-area .form-input h2{
+  margin-bottom: 20px;
+    color: #07315B;
+}
+
+.myform-area .form-area .form-input input{
+    position: relative;
+    height: 60px;
+    padding: 20px 0;
+}
+.myform-area .form-area .form-input textarea{
+    height: 120px;
+    padding: 20px 0;
+}
+
+.myform-area .form-area .form-input input,
+.myform-area .form-area .form-input textarea{
+    text-transform: capitalize;
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #e1e1e1;
+    color: #07315B;
+}
+.myform-area .form-area .form-input form .form-group{
+    position: relative;
+}
+.myform-area .form-area .form-input form .form-group label{
+    position: absolute;
+    text-transform: capitalize;
+    top: 20px;
+    left: 0;
+    pointer-events: none;
+    font-size: 14px;
+    color: #595959;
+    margin-bottom: 0;
+    transition: all .6s;
+}
+.myform-area .form-area .form-input input:focus,
+.myform-area .form-area .form-input textarea:focus,
+.myform-area .form-area .form-input input:valid,
+.myform-area .form-area .form-input textarea:valid{
+    border-bottom: 2px solid rgb(30, 29, 31);
+}
+.myform-area .form-area .form-text{
+    margin-top: 30px;
+}
+.myform-area .form-area .form-text span a{
+    color: rgba(103,58,183);
+}
+.myform-area .form-area .myform-button{
+    margin-top: 30px;
+}
+.myform-area .form-area .myform-button .myform-btn{
+    width: 100%;
+    height: 50px;
+    font-size: 17px;
+    background:#195a9b ;
+    border: none;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+.myform-area .form-area .myform-button .myform-btn:hover{
+    background: #07315B;
+}
+.myform-area .form-area .myform-button .button{
+    width: 100%;
+    height: 50px;
+    font-size: 17px;
+    background:#195a9b ;
+    border: none;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+.myform-area .form-area .myform-button .button:hover{
+background: #07315B;
+}
+    </style>
+
+</head>
+<body style="background: #a7e6de">
+  <section class="myform-area" style="padding-top: 10%;
+   background-image:url('jumble.jpg')!important";>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="form-area login-form" style="height: 450px;">
+                  <div class="form-input">
+                    <h1 style="padding-left: 33%;">Player 1</h1>
+                    <div id="alertmsg1">
+
+                    </div>
+                        <div class="form-group">
+                            <input type="email"  id="email1" name="Email">
+                            <label>Email</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="user1" name="Username">
+                            <label>Username</label>
+                        </div>
+                        <div class="myform-button">
+                            <button class="myform-btn" onclick="verify()">Submit</button>
+                        </div>
+                </div>
+                    <div class="form-input">
+                        <h1 style="padding-left: 33%;">Player 2</h1>   
+                  <div id="alertmsg2">
+
+                  </div>
+                        <div class="form-group">
+                          <input type="email"  id="email2" name="Email">
+                          <label>Email</label>
+                      </div>
+                      <div class="form-group">
+                          <input type="text" id="user2" name="Username">
+                          <label>Username</label>
+                      </div>
+                      <div class="myform-button">
+                          <button class="myform-btn" onclick="verify()">Submit</button><br><br>
+                          &nbsp &nbsp&nbsp<a href="game.html" class="button" >START GAME</a>
+                      </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script> 
+<script>
+  var user1;
+  var user2;
+  var email1;
+  var email2;
+  function verify()
+  {
+    var user1=document.getElementById("user1").value;
+    var email1=document.getElementById("email1").value;
+    var user2=document.getElementById("user2").value;
+    var email2=document.getElementById("email2").value;
+    console.log(email1);
+    var c=4;
+    if(email1==""){
+      document.getElementById("alertmsg1").innerHTML = ` <div class="alert alert-danger alert-dismissible">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        <strong>Sorry!</strong>Enter the Email
+      </div>`;
+        c--;
+    }
+    else if(user1==""){
+      document.getElementById("alertmsg1").innerHTML = ` <div class="alert alert-danger alert-dismissible">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        <strong>Sorry!</strong>Enter the Username
+      </div>`;
+        c--;
+    }
+    else{
+      document.getElementById("alertmsg1").innerHTML = ` <div class="alert alert-success alert-dismissible">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        <strong>Success!</strong>Player 1 details are captured
+      </div>`;
+    }
+if(email2==""&&user2=="")
+{
+  document.getElementById("alertmsg2").innerHTML = ` <div class="alert alert-info alert-dismissible">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        <strong>Please!</strong>Enter player 2 details
+      </div>`;
+      c=c-2;
+}
+    else if(email2==""){
+      document.getElementById("alertmsg2").innerHTML = ` <div class="alert alert-danger alert-dismissible">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        <strong>Sorry!</strong>Enter the Email
+      </div>`;
+        c--;
+    }
+   else if(user2==""){
+      document.getElementById("alertmsg2").innerHTML = ` <div class="alert alert-danger alert-dismissible">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        <strong>Sorry!</strong>Enter the Username     </div>`;
+        c--;
+    }
+    if(c==4)
+    {
+      Swal.fire({
+  title: 'Hurrayyy',
+  text: "Your details are captured",
+  icon: 'success',
+  confirmButtonColor: '#3085d6',
+  cancelButtonColor: '#d33',
+  confirmButtonText: 'Ok'
+}).then((result) => {
+  if (result.isConfirmed) {
+    window.location.href = '/access';
+  }
+})
+    }
+}
+</script>
+
+</body>
+</html>

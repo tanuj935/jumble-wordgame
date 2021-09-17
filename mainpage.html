@@ -1,0 +1,115 @@
+<html>
+    <head>
+     <title>JUMBLE WORLD</title>
+     <style>
+        h1{
+            text-align:left;
+            font-size: 80px;
+        }
+        h5{
+            text-align:left;
+            font-size: 50px;
+            margin-top: 50px;
+        }
+        body{
+            /* background-color: lightblue; */
+            background-image: linear-gradient(to bottom, #68EACC, #497BE8);
+        }
+        .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      img {
+        max-width: 90%
+      }
+      .image {
+        flex-basis: 7%
+      }
+      .text {
+
+        font-size: 20px;
+        padding-left: 2px;
+      }
+      .button {
+  width: 170px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.button{
+  background-color: transparent;
+  border: 3px solid #000080;
+  border-radius: 50px;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  color: #000000;
+}
+.button:hover {
+  box-shadow: 0 0 10px 0 #FF0000 inset, 0 0 20px 2px #00d7c3;
+  border: 3px solid #008000;
+}
+.col-1 img{
+max-width:75%;
+padding-top:50px;
+padding-bottom:50px;
+padding-left:90px;
+padding-right:235px;
+}
+
+.col-2{
+font-size:25px;
+}
+.col-2 {
+
+flex-basis:50%;
+min-width:300px;
+margin:auto;
+padding-left:10px;
+transform:translate(10%,-5%);
+}
+.row{
+display:flex;
+justify-content:space-around;
+align-items:center;
+flex-wrap:wrap;
+}
+.col-2 h1{
+font-size:50px;
+line-heigth:45px;
+}
+    </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="image">
+              <img src="logo.jpg" align="center">
+            </div>
+            <div class="text">
+              <h1>JUMBLE WORLD</h1>
+            </div>
+          </div>
+   <br><br>
+<div class="row">
+<div class="col-2">
+<h1>DESCRIPTION</h1>
+<p> It is a game which majorly focus on improving the skills and<BR> individual thinking ability with given alphabets.
+ It is not only<br> helpful for children but also the elder ones who are struggling<br> with english.</p>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button  onclick="location.href='aboutus.html';" class="button" >About Us</button>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   <button onclick="location.href='details.html';" class="button" > Get Started</button>
+</div> 
+<div class="col-1">
+<img  src="words.gif" width="300px" height="300px">
+</div>
+</div>
+    </body>
+</html>
